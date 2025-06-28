@@ -387,9 +387,8 @@ body {
   background-color: #00ff91;
 }
 
-
-/* 📱 Samsung Galaxy S8+ (360px) */
-@media (max-width: 400px) {
+/* ----------- Extra Small Devices (Phones < 480px) ----------- */
+@media (max-width: 480px) {
   .nav {
     flex-direction: column;
     align-items: flex-start;
@@ -404,20 +403,21 @@ body {
   .home {
     flex-direction: column;
     padding: 4rem 1rem;
+    text-align: center;
   }
 
   .left h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .profile {
-    width: 280px;
-    height: 340px;
+    width: 250px;
+    height: 320px;
   }
 
   .about {
     flex-direction: column;
-    text-align: center;
+    gap: 1rem;
   }
 
   .card {
@@ -430,20 +430,22 @@ body {
   }
 }
 
-/* 📲 iPad Mini (768px) */
-@media (max-width: 800px) {
+
+/* ----------- Small Tablets (Portrait up to 768px) ----------- */
+@media (max-width: 768px) {
   .home {
-    padding: 5rem 2rem;
     flex-direction: column;
     align-items: center;
-  }
-
-  .left {
+    padding: 5rem 1rem;
     text-align: center;
   }
 
-  .navright ul {
-    gap: 1rem;
+  .left {
+    padding: 1rem 0;
+  }
+
+  .right {
+    padding: 0;
   }
 
   .profile {
@@ -451,18 +453,48 @@ body {
     height: 380px;
   }
 
+  .navright ul {
+    gap: 1rem;
+  }
+
   .about {
     flex-direction: column;
-    gap: 20px;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .card {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .contact-form {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
+  }
+}
+
+/* ----------- Tablets (Landscape) & Small Laptops (up to 1024px) ----------- */
+@media (max-width: 1024px) {
+  .home {
+    padding: 6rem 2rem;
+    flex-direction: column;
+  }
+
+  .right {
+    padding-right: 0;
+  }
+
+  .profile {
+    width: 340px;
+    height: 420px;
   }
 
   .card {
     width: 90%;
   }
-}
 
+  .about {
+    gap: 20px;
+  }
+}
