@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritika Prakash</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="navleft">
+                <div><img class="logo" src="ri.jpg" alt="logo"></div>
+                <div>RITIKA PRAKASH</div>
+                <button id="theme-toggle">🌙 Dark Mode</button>
+            </div>
+            <div class="navright">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#certifications">Certification</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <home id="home">
+        <div class="home">
+            <div class="left">
+                <h1> Hi!!</h1>
+                <p>
+                    Myself Ritika Prakash.
+                    <br>I'm developer.
+                </p>
+                <button><a href="https://drive.google.com/file/d/1uYf37xRdMYRohheNEIpn96UzS0q6wMTe/view?usp=sharing" target="_blank">Download</a></button>
+            </div>
+            <div class="right">
+                <div class="profile">
+
+                    <img class="bgimage" src="telegram.png" alt="background">
+                    <img class="profileimage" src="IMG-20250602-WA0006.png" alt="">
+
+                </div>
+                <div class="socialIcon">
+                    <a href="ritikaprakash_31386"> <img src="discord (1).png" alt="discord"></a>
+                    <a href="https://github.com/Ritika-Prakash-24" target="_blank"> <img src="github.png"></a>
+                    <a href="https://www.linkedin.com/in/ritika-prakash2003/" target="_blank"><img src="linkedin.png" alt="linkedin"></a>
+                    <a href="mailto:ritikaprakash@gmail.com"><img src="gmail.png"></a>
+                </div>
+            </div>
+        </div>
+    </home>
+    <About id="About">
+        <div class="heading">
+            <h1>About Me</h1>
+        </div>
+        <div class="about">
+            <div class="about-Image">
+                <img src="profile 1.jpg" alt="profile Image">
+            </div>
+            <div class="about-text">
+                <p id="about-short">
+                    I'm Ritika Prakash, passionate about development and design. I love exploring new tech and creating
+                    interactive user experiences.
+                    <span id="dots">...</span>
+                    <span id="more" style="display: none;">
+                        I'm always eager to learn and take on new challenges. With a solid foundation in front-end tools
+                        and a growing backend knowledge, I'm building projects that reflect both creativity and
+                        functionality. Let's build something amazing together!
+                    </span>
+                </p>
+                <button onclick="toggleReadMore()" id="readBtn" class="cert-btn" style="margin-top: 10px;">Read
+                    More</button>
+            </div>
+
+
+        </div>
+
+    </About>
+    <skill id="skill" class="About">
+            <div class="heading">
+                <h1>My Skills</h1>
+            </div>
+            <div class="about-text">
+                <p>Here are some of my core technical skills represented as progress bars.</p>
+                <div class="skill-bar">
+                    <p>HTML</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 90%;">90%</div>
+                    </div>
+
+                    <p>CSS</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 85%;">85%</div>
+                    </div>
+
+                    <p>JavaScript</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 75%;">75%</div>
+                    </div>
+
+                    <p>Tailwind CSS</p>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;">70%</div>
+                    </div>
+                </div>
+            </div>
+       
+
+    </skill>
+    <certification id="certifications" class="About">
+            <div class="heading">
+                <h1>Certifications</h1>
+            </div>
+            <div class="about">
+                <div class="card">
+                    <h2>Web Development</h2>
+                    <p>Completed 6-week online training on Web Dev</p>
+                    <a href="cert1.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+                <div class="card">
+                    <h2>Python Programming</h2>
+                    <p>Basics to Intermediate Python training</p>
+                    <a href="cert2.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+                <div class="card">
+                    <h2>UI/UX Design</h2>
+                    <p>Certified for fundamentals of UI/UX Design</p>
+                    <a href="cert3.pdf" target="_blank" class="cert-btn">View Certificate</a>
+                </div>
+            </div>
+
+    </certification>
+    <project id="projects" class="About">
+        <div class="heading">
+            <h1>Projects</h1>
+        </div>
+        <div class="about">
+            <div class="card">
+                <h2>Portfolio Website</h2>
+                <p>Personal responsive portfolio site using HTML, CSS, JS</p>
+            </div>
+            <div class="card">
+                <h2>Chatbot</h2>
+                <p>AI-based chatbot for college queries (Python + Streamlit)</p>
+            </div>
+            <div class="card">
+                <h2>Resume Matcher</h2>
+                <p>Project that matches resumes with job descriptions using NLP</p>
+            </div>
+            <div class="card">
+                <h2>Caption Generator</h2>
+                <p>Auto-generates image captions using AI (Colab + Python)</p>
+            </div>
+            <div class="card">
+                <h2>Escape Room Game</h2>
+                <p>Simple escape room with logic puzzles (HTML/CSS/JS)</p>
+            </div>
+            <div class="card">
+                <h2>ClassSync Website</h2>
+                <p>College class scheduling platform with feedback support</p>
+            </div>
+        </div>
+
+    </project>
+    <Contact id="contact" class="About">
+        <div class="heading">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="about-text">
+            <form action="#" method="post" class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+
+    </Contact>
+
+    <footer class="footer">
+        <div class="about-text">
+            
+                <a href="tel:+918580118610" class="footer-btn">Call</a>
+                <a href="mailto:ritikaprakash46@gmail.com" class="footer-btn">Email</a>
+           
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
